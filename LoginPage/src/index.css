@@ -11,13 +11,18 @@ a{
   text-decoration: none;
 }
 .instagram-card{
-  top:40%;
+  top:42%;
   left:50%;
   transform: translate(-50%, -50%);
+  max-width: 350px !important;
+ 
+}
+.card{
+  border-radius: 0px !important;
 }
 
 .form-container{
-  width:80%;
+  width:95%;
 }
 
 
@@ -27,30 +32,36 @@ a{
   width:100%;
   margin-bottom: 5px;
   border:0px solid gray;
-  padding:5px;
+  padding:9px;
   border-radius: 2px;
   background-color: rgb(250,250,250);
   font-size:12px;
   padding:8px;
 }
+.instagram-card input:focus{
+  outline: 0;
+  border:1px solid gray !important;
+}
 .instagram-card button{
   width:100%;
-  margin:5px 0px;
+  margin:16px 0px;
   color:white;
   font-family: poppins;
-  font-size:14px;
+  font-size:14px !important;
   font-weight:500;
-  border-radius:10px;
+  border-radius:8px;
+  padding: 7px 16px !important;
   transform: scaleY(0.9);
 }
 
 .instagram-card .or{
   font-size:12px;
+
 }
 
 .instagram-card .or::before{
   content:"";
-  width:5.9rem;
+  width:6.9em;
   background:rgb(219,219,219);
   height: 1px;
   position:absolute;
@@ -60,7 +71,7 @@ a{
 }
 .instagram-card .or::after{
   content:"";
-  width:5.9rem;
+  width:6.9em;
   background:rgb(219,219,219);
   height: 1px;
   position:absolute;
@@ -68,19 +79,16 @@ a{
   top:50%;
   transform: translateY(-50%);
 }
-.form-title{
-  font-family: 'Pacifico', Roboto, Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: 100;
-  line-height: 18px;
-  color:#262626;
-  font-size:2.5em;
- margin: 1.3em auto;
+.form-title img{
+  width:13rem;
+  margin-top:36px;
+  margin-bottom: 12px;
 }
 
 
 .submit-btn{
   background:rgb(76,181,249);
+  
 }
 
 .facebookLogIn a{
@@ -91,6 +99,7 @@ a{
   left:15px;
   width:100%;
   color:rgb(56,81,133);
+
 }
 .facebookLogIn span{
   text-align: center;
@@ -136,7 +145,7 @@ a{
 .googlePlay_microsoft{
   display: flex;
   justify-content: space-between;
-  width:70%;
+  width:77%;
   height:50px;
   position: relative;
   margin:0 auto;
